@@ -1,0 +1,16 @@
+a {
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+:host /deep/ h1 {
+  font-style: italic;
+}
+ 
+button {
+  margin-right: 0.5em;
+}
+
+.routing {
+  text-align: center;
+}

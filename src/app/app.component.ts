@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
 
@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
 export class AppComponent {
   title = 'Test-ng6';
   imgSource = '';
+  @ViewChild('logo') logo: ElementRef;
 
   constructor(private http: Http) {}
 

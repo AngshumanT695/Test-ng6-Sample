@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
     <a routerLink="about-one">One</a>
     <a routerLink="about-two">Two</a>
     <router-outlet></router-outlet>`,
-    styles: [`a { padding-right: 1em; }`]
+    styles: [`a { padding-right: 1em; }
+    
+    :host /deep/ p { font-weight: 700; }
+    `]
 })
 export class AboutComponent {}

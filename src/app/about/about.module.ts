@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about.component';
 import { AboutOneComponent } from './about-one.component';
 import { AboutTwoComponent } from './about-two.component';
+import { AboutContentComponent } from './about-content.component';
+import { AboutContentDetailComponent } from './about-content-detail.component';
 
 const routes: Routes = [
     { path: '', component: AboutComponent, children: [
@@ -16,7 +18,9 @@ const routes: Routes = [
     declarations: [
         AboutComponent,
         AboutOneComponent,
-        AboutTwoComponent
+        AboutTwoComponent,
+        AboutContentComponent,
+        AboutContentDetailComponent
     ],
     imports: [RouterModule.forChild(routes)]
 })

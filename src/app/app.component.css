@@ -3,7 +3,7 @@ a {
   padding-right: 1em;
 }
 
-:host /deep/ h1 {
+:host /deep/ app-contact p {
   font-style: italic;
 }
  

@@ -14,12 +14,6 @@ export class AppComponent {
 
   constructor(private http: Http) {}
 
-  // getData() {
-  //   this.http.get('/assets/something.json').subscribe((res: any) => {
-  //     this.imgSource = res.json().data;
-  //   });
-  // }
-
   getDataPipe() {
     this.http.get('/assets/something.json')
     .pipe(map(res => res.json()))
